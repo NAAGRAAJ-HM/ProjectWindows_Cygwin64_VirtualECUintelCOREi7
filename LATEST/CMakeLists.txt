@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.23.2)
 
 project(
-   Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7.out
+   Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7
    VERSION 0.1
 )
 
@@ -20,8 +20,9 @@ add_definitions(
 
 
 add_executable(
-   Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7.out
+   Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7
    source/SmbLnk2_CfgGen/CfgGen.cpp
+   source/SmbLnk2_Const/Const.cpp
    source/SmbLnk2_CanIf/CanIf.cpp
    source/SmbLnk2_CanTp/CanTp.cpp
    source/SmbLnk2_CryIf/CryIf.cpp
@@ -84,10 +85,11 @@ add_executable(
 )
 
 target_include_directories(
-   Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7.out PUBLIC
+   Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7 PUBLIC
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_common"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_Compiler"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_CfgGen"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_Const"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_CanIf"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_CanNm"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_CanSm"
