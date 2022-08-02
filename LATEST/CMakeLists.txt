@@ -65,6 +65,7 @@ add_executable(
    source/SmbLnk2_Dlt/Dlt.cpp
    source/SmbLnk2_EcuM/EcuM.cpp
    source/SmbLnk2_FiM/FiM.cpp
+   source/SmbLnk2_Fm/Fm.cpp
    source/SmbLnk2_FrNm/FrNm.cpp
    source/SmbLnk2_IpduM/IpduM.cpp
    source/SmbLnk2_Nm/Nm.cpp
@@ -132,6 +133,7 @@ target_include_directories(
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_Dlt"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuM"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_FiM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_Fm"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_FrNm"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_IpduM"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_Nm"
