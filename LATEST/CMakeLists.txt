@@ -18,7 +18,6 @@ add_definitions(
    -Wuninitialized
 )
 
-
 add_executable(
    Windows10Home_Cygwin64_PEAQc150_VirtualECU_intelCOREi7
    source/SmbLnk2_CfgGen/CfgGen.cpp
