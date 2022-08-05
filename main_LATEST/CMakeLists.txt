@@ -21,9 +21,9 @@ add_definitions(
 add_executable(
    Windows_Cygwin64_VirtualECUintelCOREi7
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_CommonARA/CommonARA.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_CommonCfg/Cfg.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_CommonConst/Const.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectARA/ProjectARA.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCfg/Cfg.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectConst/Const.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanIf/EcuabCanIf.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanTp/EcuabCanTp.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCryIf/EcuabCryIf.cpp
@@ -88,10 +88,10 @@ target_include_directories(
    Windows_Cygwin64_VirtualECUintelCOREi7 PUBLIC
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_common"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_CommonARA"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_CommonCfg"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_CommonCompiler"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_CommonConst"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectARA"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCfg"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCompiler"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectConst"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanIf"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanTp"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCryIf"
