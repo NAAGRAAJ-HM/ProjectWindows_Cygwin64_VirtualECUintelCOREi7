@@ -24,6 +24,34 @@ add_executable(
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectARA/ProjectARA.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCfg/Cfg.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectConst/Const.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ReSimFm/ReSimFm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceBswM/ServiceBswM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanNm/ServiceCanNm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanSm/ServiceCanSm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCom/ServiceCom.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceComM/ServiceComM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCsm/ServiceCsm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDcm/ServiceDcm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDem/ServiceDem.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDet/ServiceDet.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDlt/ServiceDlt.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceEcuM/ServiceEcuM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFiM/ServiceFiM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFrNm/ServiceFrNm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceIpduM/ServiceIpduM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNm/ServiceNm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNvM/ServiceNvM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceOs/ServiceOs.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServicePduR/ServicePduR.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSchM/ServiceSchM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSecOC/ServiceSecOC.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSokFm/ServiceSokFm.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStartUp/ServiceStartUp.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStbM/ServiceStbM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcEcuM/ServiceSwcEcuM.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcOs/ServiceSwcOs.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceVkms/ServiceVkms.cpp
+   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM/ServiceWdgM.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanIf/EcuabCanIf.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanTp/EcuabCanTp.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCryIf/EcuabCryIf.cpp
@@ -54,34 +82,6 @@ add_executable(
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalPwm/McalPwm.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalSpi/McalSpi.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalWdg/McalWdg.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ReSimFm/ReSimFm.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceBswM/ServiceBswM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanNm/ServiceCanNm.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanSm/ServiceCanSm.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCom/ServiceCom.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceComM/ServiceComM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCsm/ServiceCsm.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDcm/ServiceDcm.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDem/ServiceDem.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDet/ServiceDet.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDlt/ServiceDlt.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceEcuM/ServiceEcuM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFiM/ServiceFiM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFrNm/ServiceFrNm.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceIpduM/ServiceIpduM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNm/ServiceNm.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNvM/ServiceNvM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceOs/ServiceOs.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServicePduR/ServicePduR.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSchM/ServiceSchM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSecOC/ServiceSecOC.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSokFm/ServiceSokFm.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStartUp/ServiceStartUp.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStbM/ServiceStbM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcEcuM/ServiceSwcEcuM.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcOs/ServiceSwcOs.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceVkms/ServiceVkms.cpp
-   ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM/ServiceWdgM.cpp
 )
 
 target_include_directories(
@@ -92,6 +92,34 @@ target_include_directories(
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCfg"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCompiler"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectConst"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ReSimFm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceBswM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanNm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanSm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCom"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceComM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCsm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDcm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDem"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDet"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDlt"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceEcuM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFiM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFrNm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceIpduM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNvM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceOs"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServicePduR"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSchM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSecOC"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSokFm"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStartUp"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStbM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcEcuM"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcOs"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceVkms"
+   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanIf"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCanTp"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_EcuabCryIf"
@@ -122,33 +150,5 @@ target_include_directories(
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalPwm"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalSpi"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_McalWdg"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ReSimFm"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceBswM"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanNm"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCanSm"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCom"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceComM"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceCsm"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDcm"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDem"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDet"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceDlt"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceEcuM"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFiM"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceFrNm"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceIpduM"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNm"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceNvM"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceOs"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServicePduR"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSchM"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSecOC"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSokFm"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStartUp"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceStbM"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcEcuM"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceSwcOs"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceVkms"
-   "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ServiceWdgM"
 )
 
