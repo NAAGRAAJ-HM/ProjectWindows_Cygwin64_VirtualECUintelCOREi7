@@ -19,7 +19,7 @@ add_definitions(
 )
 
 add_executable(
-   Windows_Cygwin64_VirtualECUintelCOREi7
+   ${PROJECT_NAME}
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc/ApplSwcFoc.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectARA/ProjectARA.cpp
    ${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectCfg/Cfg.cpp
@@ -85,7 +85,7 @@ add_executable(
 )
 
 target_include_directories(
-   Windows_Cygwin64_VirtualECUintelCOREi7 PUBLIC
+   ${PROJECT_NAME} PUBLIC
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_common"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ApplSwcFoc"
    "${PROJECT_SOURCE_DIR}/source/SmbLnk2_ProjectARA"
